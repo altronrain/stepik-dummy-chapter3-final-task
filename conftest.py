@@ -3,8 +3,9 @@ from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 
 def pytest_addoption(parser):
+    # No language is set here as default
     parser.addoption('--language', action='store', default=None,
-                     help="Choose preffered language")
+                     help="Choose preffered language for pages")
 
 
 @pytest.fixture(scope="function")
