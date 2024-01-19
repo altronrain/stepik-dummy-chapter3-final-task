@@ -16,5 +16,8 @@ class TestStepik3_6_5():
         Seems like on Chrome v.120.+ this site use en-gb by default when
         non-supported locale received. That means assert has no effect. 
         Instead we could add button text print. But this contradicts the task.
+        
+        Assert overall is strange decision when we could fail on (and handle)
+        exception using .find_element() method instead.
         """
         # print(f'\nButton text is: {add_to_basket_btn[0].text}')
