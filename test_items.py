@@ -7,7 +7,7 @@ class TestStepik3_6_5():
         # No language is set here
         link = 'http://selenium1py.pythonanywhere.com/catalogue/coders-at-work_207/'
         browser.get(link)
-        time.sleep(30)
+        # time.sleep(30)
         add_to_basket_btn = browser.find_elements(
             By.CLASS_NAME, 'btn-add-to-basket'
             )
